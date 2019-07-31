@@ -1,3 +1,3 @@
-# StateKit
+# AmericanStateKit
 
 A description of this package.
