@@ -50,16 +50,13 @@ print(one == two)
 
 ### Using as a validator.
 
-
-This uses the [vapor/validation](https://github.com/vapor/validation) package.  Refer to the docs for more usage examples.
-
 ```swift
 
 import Validation
 import AmericanStateKit
 
 struct MyModel: Codable, Reflectable {
-    var state: String?
+    let state: String?
 }
 
 extension MyModel: Validatable {
@@ -70,28 +67,13 @@ extension MyModel: Validatable {
         return validations
     }
     
-    /// helper method for testing.
     var isValid: Bool {
         do {
-            try self.validate()
-            return true
+    
         } catch {
-            return false
-        }
+    return false
+}
     }
 }
-
-var model = MyModel(state: nil)
-
-print(model.isValid)
-// False
-
-model.state = "foo"
-print(model.isValid)
-// False
-
-model.state = "oh"
-print(model.isValid)
-// True
 
 ```

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "StateKit"
-               BuildableName = "StateKit"
-               BlueprintName = "StateKit"
+               BlueprintIdentifier = "AmericanStateKit"
+               BuildableName = "AmericanStateKit"
+               BlueprintName = "AmericanStateKit"
                ReferencedContainer = "container:">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,9 +28,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "StateKitTests"
-               BuildableName = "StateKitTests"
-               BlueprintName = "StateKitTests"
+               BlueprintIdentifier = "AmericanStateKitTests"
+               BuildableName = "AmericanStateKitTests"
+               BlueprintName = "AmericanStateKitTests"
                ReferencedContainer = "container:">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +47,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "StateKitTests"
-               BuildableName = "StateKitTests"
-               BlueprintName = "StateKitTests"
+               BlueprintIdentifier = "AmericanStateKitTests"
+               BuildableName = "AmericanStateKitTests"
+               BlueprintName = "AmericanStateKitTests"
                ReferencedContainer = "container:">
             </BuildableReference>
          </TestableReference>
@@ -75,9 +75,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "StateKit"
-            BuildableName = "StateKit"
-            BlueprintName = "StateKit"
+            BlueprintIdentifier = "AmericanStateKit"
+            BuildableName = "AmericanStateKit"
+            BlueprintName = "AmericanStateKit"
             ReferencedContainer = "container:">
          </BuildableReference>
       </MacroExpansion>

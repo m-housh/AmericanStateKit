@@ -18,6 +18,30 @@ final class StateKitTests: XCTestCase {
         
     }
     
+    func testValidations() {
+        XCTAssertFalse(ValidatableState(state: nil).isValid)
+        XCTAssertFalse(ValidatableState(state: "12345").isValid)
+        XCTAssert(ValidatableState(state: "AL").isValid)
+    }
+    
+    func testStringExtension() {
+        XCTAssertNotNil("OHIO".state)
+        XCTAssertNil("Foobar".state)
+        
+        let fl = "fl".state!
+        let florida = "Florida".state!
+        
+        XCTAssertEqual(fl.name, florida.name)
+        XCTAssertEqual(fl.abbreviation, florida.abbreviation)
+        XCTAssertNotEqual(fl, florida)
+        
+        let one = AmericanState.fromString("newyork")!
+        let two = AmericanState.fromString("new york")!
+        XCTAssertEqual(one, two)
+
+
+    }
+    
     static var allTests = [
         ("testStates", testStates),
     ]

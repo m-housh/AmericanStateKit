@@ -7,6 +7,7 @@
 
 import AmericanStateKit
 import XCTest
+import Validation
 
 struct StateTestContainer {
     let state: AmericanState
@@ -38,6 +39,28 @@ struct StateTestContainer {
         XCTAssertNotNil(initializedName)
         XCTAssertNotNil(initializedAbbreviation)
         
+    }
+}
+
+struct ValidatableState: Codable, Reflectable {
+    var state: String?
+}
+
+extension ValidatableState: Validatable {
+    
+    static func validations() throws -> Validations<ValidatableState> {
+        var validations = Validations(ValidatableState.self)
+        try validations.add(\.state, !.nil && .state)
+        return validations
+    }
+    
+    var isValid: Bool {
+        do {
+            try self.validate()
+            return true
+        } catch {
+            return false
+        }
     }
 }
 
