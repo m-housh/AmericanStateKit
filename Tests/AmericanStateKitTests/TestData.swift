@@ -7,7 +7,7 @@
 
 import AmericanStateKit
 import XCTest
-import Validation
+import Validations
 
 struct StateTestContainer {
     let state: AmericanState

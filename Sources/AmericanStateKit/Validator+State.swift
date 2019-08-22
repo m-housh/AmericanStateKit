@@ -5,7 +5,7 @@
 //  Created by Michael Housh on 7/30/19.
 //
 
-import Validation
+import Validations
 
 extension Validator where T == String {
     
