@@ -1,5 +1,5 @@
 import XCTest
-import AmericanStateKit
+@testable import AmericanStateKit
 
 final class StateKitTests: XCTestCase {
     
@@ -35,8 +35,8 @@ final class StateKitTests: XCTestCase {
         XCTAssertEqual(fl.abbreviation, florida.abbreviation)
         XCTAssertNotEqual(fl, florida)
         
-        let one = AmericanState.fromString("newyork")!
-        let two = AmericanState.fromString("new york")!
+        let one = AmericanState("newyork")!
+        let two = AmericanState("new york")!
         XCTAssertEqual(one, two)
 
 

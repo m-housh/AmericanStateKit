@@ -33,8 +33,8 @@ struct StateTestContainer {
         XCTAssertEqual(state.abbreviation, abbreviationShouldMatch)
         XCTAssertEqual(abbreviatedState.abbreviation, abbreviationShouldMatch)
         
-        let initializedName = AmericanState.fromString(nameShouldMatch)
-        let initializedAbbreviation = AmericanState.fromString(abbreviationShouldMatch)
+        let initializedName = AmericanState(nameShouldMatch)
+        let initializedAbbreviation = AmericanState(abbreviationShouldMatch)
         
         XCTAssertNotNil(initializedName)
         XCTAssertNotNil(initializedAbbreviation)

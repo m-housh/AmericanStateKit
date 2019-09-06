@@ -12,7 +12,7 @@
  Represents american states.
  
  */
-public enum AmericanState: String {
+public enum AmericanState: String, Codable {
     
     case al, alabama
     case ak, alaska
@@ -51,7 +51,7 @@ public enum AmericanState: String {
     case ny, newyork
     case nc, northcarolina
     case nd, northdakota
-    case np,northmarianaislands
+    case np, northmarianaislands
     case oh, ohio
     case ok, oklahoma
     case or, oregon
@@ -71,15 +71,11 @@ public enum AmericanState: String {
     case wi, wisconsin
     case wy, wyoming
     
-
     /// Initialize a possible state from a string.
     /// - parameter string: The name or abbreviation of the state.
-    public static func fromString(_ string: String) -> AmericanState? {
+    public init?(_ string: String) {
         let str = String(string.split(separator: " ").joined())
-        return AmericanState(rawValue: str.lowercased())
+        self.init(rawValue: str.lowercased())
     }
     
 }
-
-// MARK: - Codable
-extension AmericanState: Codable { }

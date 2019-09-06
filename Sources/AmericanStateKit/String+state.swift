@@ -8,5 +8,5 @@
 extension String {
     
     /// Convert a string to a state object.
-    public var state: AmericanState? { return AmericanState.fromString(self) }
+    public var state: AmericanState? { return AmericanState(self) }
 }

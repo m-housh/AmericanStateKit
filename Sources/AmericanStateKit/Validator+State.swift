@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  Validator+State.swift
 //  
 //
 //  Created by Michael Housh on 7/30/19.
@@ -15,14 +15,18 @@ extension Validator where T == String {
     }
 }
 
-fileprivate struct StateValidator: ValidatorType {
+private struct StateValidator: ValidatorType {
     
+    /// The name of our validator.
+    /// - SeeAlso: `ValidatorType`
     var validatorReadable: String {
         return "a valid state"
     }
     
+    /// Validates a string is a state or a state's abbreviation
+    /// - SeeAlso: `ValidatorType`
     func validate(_ data: String) throws {
-        guard let _ = AmericanState.fromString(data) else {
+        guard AmericanState(data) != nil else {
             throw BasicValidationError("Invalid state.")
         }
     }
