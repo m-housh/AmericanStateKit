@@ -15,13 +15,19 @@ extension Validator where T == String {
     }
 }
 
-private struct StateValidator: ValidatorType {
+private struct StateValidator<T> {
+    
+    typealias ValidationData = T
     
     /// The name of our validator.
     /// - SeeAlso: `ValidatorType`
     var validatorReadable: String {
         return "a valid state"
     }
+    
+}
+
+extension StateValidator: ValidatorType where T == String {
     
     /// Validates a string is a state or a state's abbreviation
     /// - SeeAlso: `ValidatorType`

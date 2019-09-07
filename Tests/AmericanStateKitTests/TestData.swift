@@ -42,15 +42,38 @@ struct StateTestContainer {
     }
 }
 
-struct ValidatableState: Codable, Reflectable {
-    var state: String?
-}
-
-extension ValidatableState: Validatable {
+struct ValidatableState: Codable, Reflectable, Validatable {
     
+    var state: AmericanState? = nil
+   
     static func validations() throws -> Validations<ValidatableState> {
         var validations = Validations(ValidatableState.self)
-        try validations.add(\.state, !.nil && .state)
+        try validations.add(\.state, !.nil)
+        //try validations.add(\.stateString, .nil || .state)
+        return validations
+    }
+    
+    var isValid: Bool {
+        do {
+            try self.validate()
+            return true
+        } catch {
+            print()
+            print(error.localizedDescription)
+            print()
+            return false
+        }
+    }
+}
+
+struct ValidatableStringState: Codable, Reflectable, Validatable {
+    
+    var state: String
+   
+    static func validations() throws -> Validations<ValidatableStringState> {
+        var validations = Validations(ValidatableStringState.self)
+        try validations.add(\.state, !.empty && .state)
+        //try validations.add(\.stateString, .nil || .state)
         return validations
     }
     

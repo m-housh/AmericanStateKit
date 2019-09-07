@@ -20,8 +20,14 @@ final class StateKitTests: XCTestCase {
     
     func testValidations() {
         XCTAssertFalse(ValidatableState(state: nil).isValid)
-        XCTAssertFalse(ValidatableState(state: "12345").isValid)
-        XCTAssert(ValidatableState(state: "AL").isValid)
+        
+        let state = ValidatableState(state: .oh)
+        print()
+        print(state.state ?? "nil")
+        print()
+        XCTAssert(state.isValid)
+        
+        XCTAssert(ValidatableStringState(state: "ny").isValid)
     }
     
     func testStringExtension() {

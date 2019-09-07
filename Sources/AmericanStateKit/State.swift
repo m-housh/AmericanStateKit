@@ -5,6 +5,8 @@
 //  Created by Michael Housh on 7/29/19.
 //
 
+import Validations
+
 /**
  # AmericanState
  ----------
@@ -12,7 +14,7 @@
  Represents american states.
  
  */
-public enum AmericanState: String, Codable {
+public enum AmericanState: String, Codable, Reflectable, ReflectionDecodable {
     
     case al, alabama
     case ak, alaska
@@ -76,6 +78,16 @@ public enum AmericanState: String, Codable {
     public init?(_ string: String) {
         let str = String(string.split(separator: " ").joined())
         self.init(rawValue: str.lowercased())
+    }
+    
+}
+
+// MARK: - ReflectionDecodable
+extension AmericanState {
+    
+    /// - SeeAlso: `ReflectionDecodable`
+    public static func reflectDecoded() throws -> (AmericanState, AmericanState) {
+        return (.wy, .al)
     }
     
 }
