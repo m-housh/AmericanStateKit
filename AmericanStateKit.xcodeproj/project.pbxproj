@@ -1,0 +1,883 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"AmericanStateKit::AmericanStateKitPackageTests::ProductTarget" /* AmericanStateKitPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_82 /* Build configuration list for PBXAggregateTarget "AmericanStateKitPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_85 /* PBXTargetDependency */,
+			);
+			name = AmericanStateKitPackageTests;
+			productName = AmericanStateKitPackageTests;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		OBJ_103 /* Decodable+Reflectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* Decodable+Reflectable.swift */; };
+		OBJ_104 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* File.swift */; };
+		OBJ_105 /* ReflectionDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* ReflectionDecodable.swift */; };
+		OBJ_106 /* CoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* CoreError.swift */; };
+		OBJ_107 /* OptionalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* OptionalType.swift */; };
+		OBJ_108 /* Reflectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* Reflectable.swift */; };
+		OBJ_109 /* Debuggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* Debuggable.swift */; };
+		OBJ_110 /* SourceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* SourceLocation.swift */; };
+		OBJ_111 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* Validatable.swift */; };
+		OBJ_112 /* Validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* Validate.swift */; };
+		OBJ_113 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* ValidationError.swift */; };
+		OBJ_114 /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* Validations.swift */; };
+		OBJ_115 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* Validator.swift */; };
+		OBJ_116 /* ValidatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* ValidatorType.swift */; };
+		OBJ_117 /* AndValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* AndValidator.swift */; };
+		OBJ_118 /* CharacterSetValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* CharacterSetValidator.swift */; };
+		OBJ_119 /* CountValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* CountValidator.swift */; };
+		OBJ_120 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* EmailValidator.swift */; };
+		OBJ_121 /* EmptyValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* EmptyValidator.swift */; };
+		OBJ_122 /* InValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* InValidator.swift */; };
+		OBJ_123 /* NilIgnoringValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* NilIgnoringValidator.swift */; };
+		OBJ_124 /* NilValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* NilValidator.swift */; };
+		OBJ_125 /* NotValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* NotValidator.swift */; };
+		OBJ_126 /* OrValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* OrValidator.swift */; };
+		OBJ_127 /* RangeValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* RangeValidator.swift */; };
+		OBJ_128 /* URLValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* URLValidator.swift */; };
+		OBJ_129 /* ValidatableValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* ValidatableValidator.swift */; };
+		OBJ_136 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* Package.swift */; };
+		OBJ_65 /* AllStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* AllStates.swift */; };
+		OBJ_66 /* State+abbreviation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* State+abbreviation.swift */; };
+		OBJ_67 /* State+name.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* State+name.swift */; };
+		OBJ_68 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* State.swift */; };
+		OBJ_69 /* String+state.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* String+state.swift */; };
+		OBJ_70 /* Validator+State.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Validator+State.swift */; };
+		OBJ_72 /* Validations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Validations::Validations::Product" /* Validations.framework */; };
+		OBJ_80 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_91 /* StateKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* StateKitTests.swift */; };
+		OBJ_92 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* TestData.swift */; };
+		OBJ_93 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* XCTestManifests.swift */; };
+		OBJ_95 /* AmericanStateKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "AmericanStateKit::AmericanStateKit::Product" /* AmericanStateKit.framework */; };
+		OBJ_96 /* Validations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Validations::Validations::Product" /* Validations.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4CC7C17A232309AE0081DF0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Validations::Validations";
+			remoteInfo = Validations;
+		};
+		4CC7C17B232309AE0081DF0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "AmericanStateKit::AmericanStateKit";
+			remoteInfo = AmericanStateKit;
+		};
+		4CC7C17C232309AE0081DF0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Validations::Validations";
+			remoteInfo = Validations;
+		};
+		4CC7C17D232309AF0081DF0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "AmericanStateKit::AmericanStateKitTests";
+			remoteInfo = AmericanStateKitTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		"AmericanStateKit::AmericanStateKit::Product" /* AmericanStateKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AmericanStateKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"AmericanStateKit::AmericanStateKitTests::Product" /* AmericanStateKitTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = AmericanStateKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_10 /* State+abbreviation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "State+abbreviation.swift"; sourceTree = "<group>"; };
+		OBJ_11 /* State+name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "State+name.swift"; sourceTree = "<group>"; };
+		OBJ_12 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		OBJ_13 /* String+state.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+state.swift"; sourceTree = "<group>"; };
+		OBJ_14 /* Validator+State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Validator+State.swift"; sourceTree = "<group>"; };
+		OBJ_17 /* StateKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateKitTests.swift; sourceTree = "<group>"; };
+		OBJ_18 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		OBJ_19 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		OBJ_25 /* Decodable+Reflectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+Reflectable.swift"; sourceTree = "<group>"; };
+		OBJ_26 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		OBJ_27 /* ReflectionDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionDecodable.swift; sourceTree = "<group>"; };
+		OBJ_28 /* CoreError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreError.swift; sourceTree = "<group>"; };
+		OBJ_29 /* OptionalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalType.swift; sourceTree = "<group>"; };
+		OBJ_30 /* Reflectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reflectable.swift; sourceTree = "<group>"; };
+		OBJ_32 /* Debuggable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debuggable.swift; sourceTree = "<group>"; };
+		OBJ_33 /* SourceLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceLocation.swift; sourceTree = "<group>"; };
+		OBJ_34 /* Validatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validatable.swift; sourceTree = "<group>"; };
+		OBJ_35 /* Validate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validate.swift; sourceTree = "<group>"; };
+		OBJ_36 /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
+		OBJ_37 /* Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
+		OBJ_38 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		OBJ_39 /* ValidatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorType.swift; sourceTree = "<group>"; };
+		OBJ_41 /* AndValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndValidator.swift; sourceTree = "<group>"; };
+		OBJ_42 /* CharacterSetValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSetValidator.swift; sourceTree = "<group>"; };
+		OBJ_43 /* CountValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountValidator.swift; sourceTree = "<group>"; };
+		OBJ_44 /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
+		OBJ_45 /* EmptyValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyValidator.swift; sourceTree = "<group>"; };
+		OBJ_46 /* InValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InValidator.swift; sourceTree = "<group>"; };
+		OBJ_47 /* NilIgnoringValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NilIgnoringValidator.swift; sourceTree = "<group>"; };
+		OBJ_48 /* NilValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NilValidator.swift; sourceTree = "<group>"; };
+		OBJ_49 /* NotValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotValidator.swift; sourceTree = "<group>"; };
+		OBJ_50 /* OrValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrValidator.swift; sourceTree = "<group>"; };
+		OBJ_51 /* RangeValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeValidator.swift; sourceTree = "<group>"; };
+		OBJ_52 /* URLValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLValidator.swift; sourceTree = "<group>"; };
+		OBJ_53 /* ValidatableValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatableValidator.swift; sourceTree = "<group>"; };
+		OBJ_54 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/michael/Documents/Projects/Xcode/MyProjects/HHE/DataModels/AmericanStateKit/.build/checkouts/Validations/Package.swift; sourceTree = "<group>"; };
+		OBJ_59 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_9 /* AllStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllStates.swift; sourceTree = "<group>"; };
+		"Validations::Validations::Product" /* Validations.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Validations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_130 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_72 /* Validations.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_95 /* AmericanStateKit.framework in Frameworks */,
+				OBJ_96 /* Validations.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		OBJ_15 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_16 /* AmericanStateKitTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_16 /* AmericanStateKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_17 /* StateKitTests.swift */,
+				OBJ_18 /* TestData.swift */,
+				OBJ_19 /* XCTestManifests.swift */,
+			);
+			name = AmericanStateKitTests;
+			path = Tests/AmericanStateKitTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_20 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_21 /* Validations 0.1.2 */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		OBJ_21 /* Validations 0.1.2 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_22 /* Validations */,
+				OBJ_54 /* Package.swift */,
+			);
+			name = "Validations 0.1.2";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_22 /* Validations */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_23 /* Core */,
+				OBJ_31 /* Debuggable */,
+				OBJ_34 /* Validatable.swift */,
+				OBJ_35 /* Validate.swift */,
+				OBJ_36 /* ValidationError.swift */,
+				OBJ_37 /* Validations.swift */,
+				OBJ_38 /* Validator.swift */,
+				OBJ_39 /* ValidatorType.swift */,
+				OBJ_40 /* Validators */,
+			);
+			name = Validations;
+			path = .build/checkouts/Validations/Sources/Validations;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_23 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_24 /* CodableReflection */,
+				OBJ_28 /* CoreError.swift */,
+				OBJ_29 /* OptionalType.swift */,
+				OBJ_30 /* Reflectable.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		OBJ_24 /* CodableReflection */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_25 /* Decodable+Reflectable.swift */,
+				OBJ_26 /* File.swift */,
+				OBJ_27 /* ReflectionDecodable.swift */,
+			);
+			path = CodableReflection;
+			sourceTree = "<group>";
+		};
+		OBJ_31 /* Debuggable */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_32 /* Debuggable.swift */,
+				OBJ_33 /* SourceLocation.swift */,
+			);
+			path = Debuggable;
+			sourceTree = "<group>";
+		};
+		OBJ_40 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_41 /* AndValidator.swift */,
+				OBJ_42 /* CharacterSetValidator.swift */,
+				OBJ_43 /* CountValidator.swift */,
+				OBJ_44 /* EmailValidator.swift */,
+				OBJ_45 /* EmptyValidator.swift */,
+				OBJ_46 /* InValidator.swift */,
+				OBJ_47 /* NilIgnoringValidator.swift */,
+				OBJ_48 /* NilValidator.swift */,
+				OBJ_49 /* NotValidator.swift */,
+				OBJ_50 /* OrValidator.swift */,
+				OBJ_51 /* RangeValidator.swift */,
+				OBJ_52 /* URLValidator.swift */,
+				OBJ_53 /* ValidatableValidator.swift */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_15 /* Tests */,
+				OBJ_20 /* Dependencies */,
+				OBJ_55 /* Products */,
+				OBJ_59 /* README.md */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"AmericanStateKit::AmericanStateKitTests::Product" /* AmericanStateKitTests.xctest */,
+				"AmericanStateKit::AmericanStateKit::Product" /* AmericanStateKit.framework */,
+				"Validations::Validations::Product" /* Validations.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* AmericanStateKit */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* AmericanStateKit */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* AllStates.swift */,
+				OBJ_10 /* State+abbreviation.swift */,
+				OBJ_11 /* State+name.swift */,
+				OBJ_12 /* State.swift */,
+				OBJ_13 /* String+state.swift */,
+				OBJ_14 /* Validator+State.swift */,
+			);
+			name = AmericanStateKit;
+			path = Sources/AmericanStateKit;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"AmericanStateKit::AmericanStateKit" /* AmericanStateKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_61 /* Build configuration list for PBXNativeTarget "AmericanStateKit" */;
+			buildPhases = (
+				OBJ_64 /* Sources */,
+				OBJ_71 /* Frameworks */,
+				4CC7C17E232309BD0081DF0C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_73 /* PBXTargetDependency */,
+			);
+			name = AmericanStateKit;
+			productName = AmericanStateKit;
+			productReference = "AmericanStateKit::AmericanStateKit::Product" /* AmericanStateKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"AmericanStateKit::AmericanStateKitTests" /* AmericanStateKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_87 /* Build configuration list for PBXNativeTarget "AmericanStateKitTests" */;
+			buildPhases = (
+				OBJ_90 /* Sources */,
+				OBJ_94 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_97 /* PBXTargetDependency */,
+				OBJ_98 /* PBXTargetDependency */,
+			);
+			name = AmericanStateKitTests;
+			productName = AmericanStateKitTests;
+			productReference = "AmericanStateKit::AmericanStateKitTests::Product" /* AmericanStateKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"AmericanStateKit::SwiftPMPackageDescription" /* AmericanStateKitPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_76 /* Build configuration list for PBXNativeTarget "AmericanStateKitPackageDescription" */;
+			buildPhases = (
+				OBJ_79 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AmericanStateKitPackageDescription;
+			productName = AmericanStateKitPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"Validations::SwiftPMPackageDescription" /* ValidationsPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_132 /* Build configuration list for PBXNativeTarget "ValidationsPackageDescription" */;
+			buildPhases = (
+				OBJ_135 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ValidationsPackageDescription;
+			productName = ValidationsPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"Validations::Validations" /* Validations */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_99 /* Build configuration list for PBXNativeTarget "Validations" */;
+			buildPhases = (
+				OBJ_102 /* Sources */,
+				OBJ_130 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Validations;
+			productName = Validations;
+			productReference = "Validations::Validations::Product" /* Validations.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "AmericanStateKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"AmericanStateKit::AmericanStateKit" /* AmericanStateKit */,
+				"AmericanStateKit::SwiftPMPackageDescription" /* AmericanStateKitPackageDescription */,
+				"AmericanStateKit::AmericanStateKitPackageTests::ProductTarget" /* AmericanStateKitPackageTests */,
+				"AmericanStateKit::AmericanStateKitTests" /* AmericanStateKitTests */,
+				"Validations::Validations" /* Validations */,
+				"Validations::SwiftPMPackageDescription" /* ValidationsPackageDescription */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CC7C17E232309BD0081DF0C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_102 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_103 /* Decodable+Reflectable.swift in Sources */,
+				OBJ_104 /* File.swift in Sources */,
+				OBJ_105 /* ReflectionDecodable.swift in Sources */,
+				OBJ_106 /* CoreError.swift in Sources */,
+				OBJ_107 /* OptionalType.swift in Sources */,
+				OBJ_108 /* Reflectable.swift in Sources */,
+				OBJ_109 /* Debuggable.swift in Sources */,
+				OBJ_110 /* SourceLocation.swift in Sources */,
+				OBJ_111 /* Validatable.swift in Sources */,
+				OBJ_112 /* Validate.swift in Sources */,
+				OBJ_113 /* ValidationError.swift in Sources */,
+				OBJ_114 /* Validations.swift in Sources */,
+				OBJ_115 /* Validator.swift in Sources */,
+				OBJ_116 /* ValidatorType.swift in Sources */,
+				OBJ_117 /* AndValidator.swift in Sources */,
+				OBJ_118 /* CharacterSetValidator.swift in Sources */,
+				OBJ_119 /* CountValidator.swift in Sources */,
+				OBJ_120 /* EmailValidator.swift in Sources */,
+				OBJ_121 /* EmptyValidator.swift in Sources */,
+				OBJ_122 /* InValidator.swift in Sources */,
+				OBJ_123 /* NilIgnoringValidator.swift in Sources */,
+				OBJ_124 /* NilValidator.swift in Sources */,
+				OBJ_125 /* NotValidator.swift in Sources */,
+				OBJ_126 /* OrValidator.swift in Sources */,
+				OBJ_127 /* RangeValidator.swift in Sources */,
+				OBJ_128 /* URLValidator.swift in Sources */,
+				OBJ_129 /* ValidatableValidator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_135 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_136 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_65 /* AllStates.swift in Sources */,
+				OBJ_66 /* State+abbreviation.swift in Sources */,
+				OBJ_67 /* State+name.swift in Sources */,
+				OBJ_68 /* State.swift in Sources */,
+				OBJ_69 /* String+state.swift in Sources */,
+				OBJ_70 /* Validator+State.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_80 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_91 /* StateKitTests.swift in Sources */,
+				OBJ_92 /* TestData.swift in Sources */,
+				OBJ_93 /* XCTestManifests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Validations::Validations" /* Validations */;
+			targetProxy = 4CC7C17A232309AE0081DF0C /* PBXContainerItemProxy */;
+		};
+		OBJ_85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "AmericanStateKit::AmericanStateKitTests" /* AmericanStateKitTests */;
+			targetProxy = 4CC7C17D232309AF0081DF0C /* PBXContainerItemProxy */;
+		};
+		OBJ_97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "AmericanStateKit::AmericanStateKit" /* AmericanStateKit */;
+			targetProxy = 4CC7C17B232309AE0081DF0C /* PBXContainerItemProxy */;
+		};
+		OBJ_98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Validations::Validations" /* Validations */;
+			targetProxy = 4CC7C17C232309AE0081DF0C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_100 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = AmericanStateKit.xcodeproj/Validations_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Validations;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Validations;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = AmericanStateKit.xcodeproj/Validations_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Validations;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Validations;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_133 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_134 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = AmericanStateKit.xcodeproj/AmericanStateKit_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = AmericanStateKit;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = AmericanStateKit;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = AmericanStateKit.xcodeproj/AmericanStateKit_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = AmericanStateKit;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = AmericanStateKit;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = AmericanStateKit.xcodeproj/AmericanStateKitTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = AmericanStateKitTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = AmericanStateKit.xcodeproj/AmericanStateKitTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = AmericanStateKitTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_132 /* Build configuration list for PBXNativeTarget "ValidationsPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_133 /* Debug */,
+				OBJ_134 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "AmericanStateKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_61 /* Build configuration list for PBXNativeTarget "AmericanStateKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_62 /* Debug */,
+				OBJ_63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_76 /* Build configuration list for PBXNativeTarget "AmericanStateKitPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_77 /* Debug */,
+				OBJ_78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_82 /* Build configuration list for PBXAggregateTarget "AmericanStateKitPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_83 /* Debug */,
+				OBJ_84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_87 /* Build configuration list for PBXNativeTarget "AmericanStateKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_88 /* Debug */,
+				OBJ_89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_99 /* Build configuration list for PBXNativeTarget "Validations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_100 /* Debug */,
+				OBJ_101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
