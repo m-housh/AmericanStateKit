@@ -9,6 +9,10 @@ extension AmericanState {
     
     /// The state's abbreviation.
     public var abbreviation: String {
+        return _abbreviation.uppercased()
+    }
+    
+    var _abbreviation: String {
         switch self {
         case .al, .alabama:
             return "al"

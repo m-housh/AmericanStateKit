@@ -80,6 +80,11 @@ public enum AmericanState: String, Codable, Reflectable, ReflectionDecodable {
         self.init(rawValue: str.lowercased())
     }
     
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.singleValueContainer()
+        let string = try container.decode(String.self)
+        self.init(string)!
+    }
 }
 
 // MARK: - ReflectionDecodable

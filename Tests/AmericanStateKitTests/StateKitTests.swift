@@ -1,4 +1,5 @@
 import XCTest
+import Validations
 @testable import AmericanStateKit
 
 final class StateKitTests: XCTestCase {
@@ -22,12 +23,13 @@ final class StateKitTests: XCTestCase {
         XCTAssertFalse(ValidatableState(state: nil).isValid)
         
         let state = ValidatableState(state: .oh)
-        print()
         print(state.state ?? "nil")
-        print()
         XCTAssert(state.isValid)
         
         XCTAssert(ValidatableStringState(state: "ny").isValid)
+        
+        let validator = Validator<String>.state
+        XCTAssertThrowsError(try validator.validate("foo"))
     }
     
     func testStringExtension() {
@@ -46,6 +48,16 @@ final class StateKitTests: XCTestCase {
         XCTAssertEqual(one, two)
 
 
+    }
+    
+    func testDecoding() {
+        let json = """
+            { "state": "ny" }
+        """
+        let data = json.data(using: .utf8)!
+        let decoder = JSONDecoder()
+        let decoded = try! decoder.decode(ValidatableState.self, from: data)
+        XCTAssertEqual(decoded.state?.abbreviation, "NY")
     }
     
     static var allTests = [

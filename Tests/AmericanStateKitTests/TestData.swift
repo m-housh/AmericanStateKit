@@ -14,7 +14,7 @@ struct StateTestContainer {
     let abbreviatedState: AmericanState
     
     var abbreviationShouldMatch: String {
-        return abbreviatedState.rawValue
+        return abbreviatedState.rawValue.uppercased()
     }
     
     let nameShouldMatch: String
