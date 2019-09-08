@@ -5,8 +5,6 @@
 //  Created by Michael Housh on 7/30/19.
 //
 
-
-
 /**
  # AllStates
  
