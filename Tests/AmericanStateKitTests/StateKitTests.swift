@@ -41,7 +41,7 @@ final class StateKitTests: XCTestCase {
         
         XCTAssertEqual(fl.name, florida.name)
         XCTAssertEqual(fl.abbreviation, florida.abbreviation)
-        XCTAssertNotEqual(fl, florida)
+        XCTAssertEqual(fl, florida)
         
         let one = AmericanState("newyork")!
         let two = AmericanState("new york")!

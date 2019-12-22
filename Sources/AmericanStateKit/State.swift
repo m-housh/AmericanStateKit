@@ -96,3 +96,10 @@ extension AmericanState {
     }
     
 }
+
+extension AmericanState: Equatable {
+
+    public static func ==(lhs: AmericanState, rhs: AmericanState) -> Bool {
+        lhs.abbreviation == rhs.abbreviation
+    }
+}
