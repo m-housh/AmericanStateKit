@@ -14,7 +14,7 @@
 public struct AllStates {
     
     /// All the states to get names and abbreviations from.
-    static let states: [AmericanState] = [
+    public static let states: [AmericanState] = [
         .al, .ak, .as, .az, .ar, .ca, .co, .ct, .de, .dc, .fl,
         .ga, .gu, .hi, .id, .il, .in, .ia, .ks, .ky, .la, .me,
         .md, .ma, .mi, .mn, .ms, .mo, .mt, .ne, .nv, .nh, .nj,

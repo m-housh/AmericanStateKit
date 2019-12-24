@@ -59,6 +59,28 @@ final class StateKitTests: XCTestCase {
         let decoded = try! decoder.decode(ValidatableState.self, from: data)
         XCTAssertEqual(decoded.state?.abbreviation, "NY")
     }
+
+    func testEquatable() {
+        let names = AllStates.names.map { $0.state! }
+
+        for name in names {
+            let abbreviation = name.abbreviation.state!
+            XCTAssertEqual(abbreviation, name)
+
+            let shouldNotEqual = names.first { $0 != name }!
+            let shouldNotEqualAbbreviation = shouldNotEqual.abbreviation.state!
+            XCTAssertNotEqual(name, shouldNotEqual)
+            XCTAssertNotEqual(name, shouldNotEqualAbbreviation)
+        }
+    }
+
+    func testEquatable2() {
+        let ohio = AmericanState.ohio
+        let oh = AmericanState.oh
+        XCTAssertEqual(ohio, oh)
+        XCTAssertNotEqual(ohio, .al)
+        XCTAssertNotEqual(ohio, .alaska)
+    }
     
     static var allTests = [
         ("testStates", testStates),
